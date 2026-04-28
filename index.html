@@ -28,13 +28,13 @@ Select ONE Additional Feature to Add
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">fight club</option>
+          <option value="movie2">goodwill hunting</option>
+          <option value="movie3">call me by your name</option>
+          <option value="movie4">Mid 90s</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check Answer</button>
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
@@ -45,13 +45,13 @@ Select ONE Additional Feature to Add
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">57 bus</option>
+          <option value="book2">The Great Gatsby</option>
+          <option value="book3">Hitch hikers guide to the galaxy</option>
+          <option value="book4">Who reads books anymore?!?</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Answer</button>
     </form>
     <div id="book-result">
       <p id="book-text"></p>
@@ -66,11 +66,11 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "movie2") {
           $("#movie-text").text("YESSSS!");
         } 
         else {
-          $("#movie-text").text("Try Again!");
+          $("#movie-text").text("Good guess that movie is still valid");
         }
       });
 
@@ -81,11 +81,11 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
+        if (answer === "book4") {
           $("#book-text").text("YESSSS!");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#book-text").text("Psh you thought");
         }
       });
       
